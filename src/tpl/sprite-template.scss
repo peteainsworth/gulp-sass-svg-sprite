@@ -1,0 +1,16 @@
+$uniqueid: unique-id();
+
+$icons: (
+      sprite: (width: {{spriteWidth}}px, height: {{spriteHeight}}px, pngPath: '../img/sprite.png?={{spriteWidth}}{{spriteHeight}}#{$uniqueid}', svgPath: '../img/sprite.svg?={{spriteWidth}}{{spriteHeight}}#{$uniqueid}'),
+{{#shapes}}
+    {{base}}: (width: {{width.inner}}px, height: {{height.inner}}px, backgroundX: {{position.absolute.x}}px, backgroundY: {{position.absolute.y}}px),
+{{/shapes}});
+
+/// Add class for <IE9 sprite fallback
+/// @group sprite
+/// @type String
+$ieSprite: '.lt-ie9' !default;
+
+/// Set the `$sprite` map
+/// @group sprite
+$sprite: map-get($icons, sprite) !default;

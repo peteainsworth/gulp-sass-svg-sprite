@@ -1,0 +1,16 @@
+//////////////////////////////
+// Sprite Module
+@import "functions";
+@import "variables";
+@import "extends";
+@import "mixins";
+//////////////////////////////
+
+.icon[aria-expanded="true"] {
+  @include sprite(close);
+  &:hover,
+  &:focus,
+  &:active {
+    @include sprite(close-hover, bg);
+  }
+}

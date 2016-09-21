@@ -1,0 +1,13 @@
+//////////////////////////////
+// Sprite Module Extends
+//////////////////////////////
+
+// Sets background image and size with IE fallback
+%sprite {
+  display: inline-block;
+  background-image: url(map-get($sprite, svgPath));
+  background-size: rem-calc(map-get($sprite, width)) rem-calc(map-get($sprite, height));
+}
+%ie-sprite {
+  background-image: url(map-get($sprite, pngPath));
+}

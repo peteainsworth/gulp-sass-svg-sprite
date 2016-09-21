@@ -1,0 +1,64 @@
+$uniqueid: unique-id();
+
+$icons: (
+      sprite: (width: 2137px, height: 2103px, pngPath: '../img/sprite.png?=21372103#{$uniqueid}', svgPath: '../img/sprite.svg?=21372103#{$uniqueid}'),
+    artist-facebook: (width: 36px, height: 36px, backgroundX: 0px, backgroundY: 0px),
+    artist-facebook-hover: (width: 36px, height: 36px, backgroundX: -36px, backgroundY: -36px),
+    artist-instagram: (width: 36px, height: 36px, backgroundX: -72px, backgroundY: -72px),
+    artist-instagram-hover: (width: 36px, height: 36px, backgroundX: -108px, backgroundY: -108px),
+    artist-spotify: (width: 36px, height: 36px, backgroundX: -144px, backgroundY: -144px),
+    artist-spotify-hover: (width: 36px, height: 36px, backgroundX: -180px, backgroundY: -180px),
+    artist-twitter: (width: 36px, height: 36px, backgroundX: -216px, backgroundY: -216px),
+    artist-twitter-hover: (width: 36px, height: 36px, backgroundX: -252px, backgroundY: -252px),
+    artist-website: (width: 36px, height: 36px, backgroundX: -288px, backgroundY: -288px),
+    artist-website-hover: (width: 36px, height: 36px, backgroundX: -324px, backgroundY: -324px),
+    artist-youtube: (width: 36px, height: 36px, backgroundX: -360px, backgroundY: -360px),
+    artist-youtube-hover: (width: 36px, height: 36px, backgroundX: -396px, backgroundY: -396px),
+    close: (width: 22px, height: 22px, backgroundX: -432px, backgroundY: -432px),
+    close-hover: (width: 22px, height: 22px, backgroundX: -454px, backgroundY: -454px),
+    contact-icn: (width: 64px, height: 64px, backgroundX: -476px, backgroundY: -476px),
+    cross: (width: 30px, height: 30px, backgroundX: -540px, backgroundY: -540px),
+    cross-hover: (width: 30px, height: 30px, backgroundX: -570px, backgroundY: -570px),
+    disabled-icn: (width: 64px, height: 64px, backgroundX: -600px, backgroundY: -600px),
+    down-arrow-icon: (width: 32px, height: 32px, backgroundX: -664px, backgroundY: -664px),
+    events-icn: (width: 64px, height: 64px, backgroundX: -696px, backgroundY: -696px),
+    facebook: (width: 46px, height: 46px, backgroundX: -760px, backgroundY: -760px),
+    facebook-hover: (width: 46px, height: 46px, backgroundX: -806px, backgroundY: -806px),
+    hamburger: (width: 30px, height: 22px, backgroundX: -852px, backgroundY: -852px),
+    hamburger-hover: (width: 30px, height: 22px, backgroundX: -882px, backgroundY: -874px),
+    info: (width: 50px, height: 50px, backgroundX: -912px, backgroundY: -896px),
+    instagram: (width: 46px, height: 46px, backgroundX: -962px, backgroundY: -946px),
+    instagram-hover: (width: 46px, height: 46px, backgroundX: -1008px, backgroundY: -992px),
+    leaf-icn: (width: 32px, height: 32px, backgroundX: -1054px, backgroundY: -1038px),
+    left-arrow-icon: (width: 32px, height: 32px, backgroundX: -1086px, backgroundY: -1070px),
+    news: (width: 45px, height: 27px, backgroundX: -1118px, backgroundY: -1102px),
+    newsletter: (width: 50px, height: 50px, backgroundX: -1163px, backgroundY: -1129px),
+    other-icn: (width: 64px, height: 64px, backgroundX: -1213px, backgroundY: -1179px),
+    safety-icn: (width: 64px, height: 64px, backgroundX: -1277px, backgroundY: -1243px),
+    search: (width: 46px, height: 46px, backgroundX: -1341px, backgroundY: -1307px),
+    social: (width: 22px, height: 22px, backgroundX: -1387px, backgroundY: -1353px),
+    social-hover: (width: 22px, height: 22px, backgroundX: -1409px, backgroundY: -1375px),
+    soundcloud: (width: 46px, height: 46px, backgroundX: -1431px, backgroundY: -1397px),
+    soundcloud-hover: (width: 46px, height: 46px, backgroundX: -1477px, backgroundY: -1443px),
+    spotify: (width: 46px, height: 46px, backgroundX: -1523px, backgroundY: -1489px),
+    spotify-hover: (width: 46px, height: 46px, backgroundX: -1569px, backgroundY: -1535px),
+    tickets: (width: 50px, height: 50px, backgroundX: -1615px, backgroundY: -1581px),
+    tickets-icn: (width: 64px, height: 64px, backgroundX: -1665px, backgroundY: -1631px),
+    travel-icn: (width: 64px, height: 64px, backgroundX: -1729px, backgroundY: -1695px),
+    tree-icn: (width: 64px, height: 64px, backgroundX: -1793px, backgroundY: -1759px),
+    twitter: (width: 46px, height: 46px, backgroundX: -1857px, backgroundY: -1823px),
+    twitter-hover: (width: 46px, height: 46px, backgroundX: -1903px, backgroundY: -1869px),
+    up-arrow-icon: (width: 32px, height: 32px, backgroundX: -1949px, backgroundY: -1915px),
+    vip-icn: (width: 64px, height: 64px, backgroundX: -1981px, backgroundY: -1947px),
+    youtube: (width: 46px, height: 46px, backgroundX: -2045px, backgroundY: -2011px),
+    youtube-hover: (width: 46px, height: 46px, backgroundX: -2091px, backgroundY: -2057px),
+);
+
+/// Add class for <IE9 sprite fallback
+/// @group sprite
+/// @type String
+$ieSprite: '.lt-ie9' !default;
+
+/// Set the `$sprite` map
+/// @group sprite
+$sprite: map-get($icons, sprite) !default;
